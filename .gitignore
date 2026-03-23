@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Large model/vector DB files
+vector_db/
+*.faiss
+*.pkl
