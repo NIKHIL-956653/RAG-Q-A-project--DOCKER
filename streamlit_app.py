@@ -13,13 +13,13 @@ load_dotenv()
 
 # ---- Page Config ----
 st.set_page_config(
-    page_title="MBA Notes Q&A",
+    page_title="RAG Q&A System",
     page_icon="🎓",
     layout="centered"
 )
 
-st.title("🎓 MBA Notes Q&A System")
-st.markdown("Ask any question from your **Data Visualization notes!**")
+st.title("🎓 RAG Q&A System")
+st.markdown("Ask any question from your **documents!**")
 st.divider()
 
 # ---- Load Everything ----
@@ -64,7 +64,7 @@ def load_qa_chain():
     return chain
 
 # Load the chain
-with st.spinner("Loading your MBA notes... Please wait!"):
+with st.spinner("Loading your documents... Please wait!"):
     chain = load_qa_chain()
 
 st.success("Ready! Ask me anything from your notes! ✅")
