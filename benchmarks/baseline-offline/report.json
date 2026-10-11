@@ -577,8 +577,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.102867,
-        "generation": 0.434948
+        "retrieval": 0.110354,
+        "generation": 0.439619
       }
     },
     {
@@ -778,8 +778,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.046642,
-        "generation": 0.310458
+        "retrieval": 0.050871,
+        "generation": 0.35825
       }
     },
     {
@@ -978,8 +978,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.099342,
-        "generation": 0.579694
+        "retrieval": 0.04527,
+        "generation": 0.284379
       }
     },
     {
@@ -1178,8 +1178,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.078722,
-        "generation": 0.876853
+        "retrieval": 0.03683,
+        "generation": 0.346116
       }
     },
     {
@@ -1354,8 +1354,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.050898,
-        "generation": 0.431676
+        "retrieval": 0.03431,
+        "generation": 0.3211
       }
     },
     {
@@ -1555,8 +1555,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.036045,
-        "generation": 0.324799
+        "retrieval": 0.034507,
+        "generation": 0.33203
       }
     },
     {
@@ -1755,8 +1755,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.04139,
-        "generation": 0.283132
+        "retrieval": 0.043257,
+        "generation": 0.324152
       }
     },
     {
@@ -1955,8 +1955,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.047614,
-        "generation": 0.307431
+        "retrieval": 0.053889,
+        "generation": 0.389286
       }
     },
     {
@@ -2131,8 +2131,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.028102,
-        "generation": 0.195762
+        "retrieval": 0.031377,
+        "generation": 0.245599
       }
     },
     {
@@ -2319,8 +2319,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.036738,
-        "generation": 0.342335
+        "retrieval": 0.036096,
+        "generation": 0.349883
       }
     },
     {
@@ -2459,8 +2459,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.026705,
-        "generation": 0.41548
+        "retrieval": 0.022799,
+        "generation": 0.368761
       }
     },
     {
@@ -2661,8 +2661,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.039379,
-        "generation": 0.389128
+        "retrieval": 0.042313,
+        "generation": 0.346843
       }
     },
     {
@@ -2845,8 +2845,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.031962,
-        "generation": 0.470635
+        "retrieval": 0.033064,
+        "generation": 0.360507
       }
     },
     {
@@ -3041,8 +3041,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.052306,
-        "generation": 0.413161
+        "retrieval": 0.030954,
+        "generation": 0.403128
       }
     },
     {
@@ -3254,8 +3254,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.073241,
-        "generation": 0.473189
+        "retrieval": 0.056281,
+        "generation": 0.377487
       }
     },
     {
@@ -3461,8 +3461,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.0568,
-        "generation": 0.476585
+        "retrieval": 0.058073,
+        "generation": 0.363894
       }
     },
     {
@@ -3669,8 +3669,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.042216,
-        "generation": 0.431201
+        "retrieval": 0.039351,
+        "generation": 0.255488
       }
     },
     {
@@ -3879,8 +3879,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.067542,
-        "generation": 0.328638
+        "retrieval": 0.038804,
+        "generation": 0.256927
       }
     },
     {
@@ -4087,8 +4087,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.058644,
-        "generation": 0.53021
+        "retrieval": 0.041629,
+        "generation": 0.298433
       }
     },
     {
@@ -4288,8 +4288,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.044943,
-        "generation": 0.421699
+        "retrieval": 0.038068,
+        "generation": 0.569072
       }
     },
     {
@@ -4448,8 +4448,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.035312,
-        "generation": 0.398645
+        "retrieval": 0.035522,
+        "generation": 0.413434
       }
     },
     {
@@ -4521,8 +4521,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.022469,
-        "generation": 0.466692
+        "retrieval": 0.020656,
+        "generation": 0.375052
       }
     },
     {
@@ -4681,8 +4681,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.032304,
-        "generation": 0.385626
+        "retrieval": 0.030337,
+        "generation": 0.254359
       }
     },
     {
@@ -4838,8 +4838,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.03343,
-        "generation": 0.596405
+        "retrieval": 0.031913,
+        "generation": 0.404209
       }
     },
     {
@@ -4998,8 +4998,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.044466,
-        "generation": 0.447682
+        "retrieval": 0.039626,
+        "generation": 0.286897
       }
     },
     {
@@ -5107,8 +5107,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.036758,
-        "generation": 0.6513
+        "retrieval": 0.023346,
+        "generation": 0.450599
       }
     },
     {
@@ -5192,8 +5192,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.030225,
-        "generation": 0.546601
+        "retrieval": 0.019221,
+        "generation": 0.313166
       }
     },
     {
@@ -5349,8 +5349,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.05687,
-        "generation": 0.525374
+        "retrieval": 0.032466,
+        "generation": 0.321409
       }
     },
     {
@@ -5524,8 +5524,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.042681,
-        "generation": 0.661265
+        "retrieval": 0.050967,
+        "generation": 0.377535
       }
     },
     {
@@ -5698,8 +5698,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.049641,
-        "generation": 0.726658
+        "retrieval": 0.025156,
+        "generation": 0.402744
       }
     },
     {
@@ -5898,8 +5898,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.048814,
-        "generation": 0.440134
+        "retrieval": 0.053541,
+        "generation": 0.248358
       }
     },
     {
@@ -6098,8 +6098,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.047373,
-        "generation": 0.494515
+        "retrieval": 0.043534,
+        "generation": 0.359628
       }
     },
     {
@@ -6224,8 +6224,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.035837,
-        "generation": 0.571934
+        "retrieval": 0.023423,
+        "generation": 0.348923
       }
     },
     {
@@ -6425,8 +6425,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.084181,
-        "generation": 0.563187
+        "retrieval": 0.054307,
+        "generation": 0.307902
       }
     },
     {
@@ -6625,8 +6625,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.078007,
-        "generation": 0.508108
+        "retrieval": 0.047024,
+        "generation": 0.316878
       }
     },
     {
@@ -6826,8 +6826,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.047231,
-        "generation": 0.501724
+        "retrieval": 0.031907,
+        "generation": 0.454962
       }
     },
     {
@@ -6988,8 +6988,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.031628,
-        "generation": 0.321609
+        "retrieval": 0.032865,
+        "generation": 0.319857
       }
     },
     {
@@ -7131,8 +7131,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.021378,
-        "generation": 0.362817
+        "retrieval": 0.02501,
+        "generation": 0.320712
       }
     },
     {
@@ -7334,8 +7334,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.048788,
-        "generation": 0.373972
+        "retrieval": 0.040003,
+        "generation": 0.362851
       }
     },
     {
@@ -7489,8 +7489,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.031862,
-        "generation": 0.353941
+        "retrieval": 0.032676,
+        "generation": 0.362249
       }
     },
     {
@@ -7692,8 +7692,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.046496,
-        "generation": 0.351237
+        "retrieval": 0.046184,
+        "generation": 0.382876
       }
     },
     {
@@ -7895,8 +7895,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.034347,
-        "generation": 0.312908
+        "retrieval": 0.05795,
+        "generation": 0.376815
       }
     },
     {
@@ -8050,8 +8050,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.02528,
-        "generation": 0.34797
+        "retrieval": 0.028358,
+        "generation": 0.370845
       }
     },
     {
@@ -8138,8 +8138,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.012676,
-        "generation": 0.118407
+        "retrieval": 0.013512,
+        "generation": 0.184731
       }
     },
     {
@@ -8240,8 +8240,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.013162,
-        "generation": 0.191576
+        "retrieval": 0.019784,
+        "generation": 0.229033
       }
     },
     {
@@ -8417,8 +8417,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.023866,
-        "generation": 0.358009
+        "retrieval": 0.025739,
+        "generation": 0.276451
       }
     },
     {
@@ -8519,8 +8519,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.017076,
-        "generation": 0.27543
+        "retrieval": 0.19112,
+        "generation": 1.397628
       }
     },
     {
@@ -8720,8 +8720,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.046549,
-        "generation": 0.456453
+        "retrieval": 0.038289,
+        "generation": 1.354151
       }
     },
     {
@@ -8756,8 +8756,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.073472,
-        "generation": 0.005906
+        "retrieval": 0.009262,
+        "generation": 0.006472
       }
     },
     {
@@ -8957,8 +8957,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.036168,
-        "generation": 0.324896
+        "retrieval": 0.03456,
+        "generation": 0.239023
       }
     },
     {
@@ -9131,8 +9131,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.040329,
-        "generation": 0.334738
+        "retrieval": 0.038054,
+        "generation": 0.366849
       }
     },
     {
@@ -9331,8 +9331,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.037094,
-        "generation": 0.34284
+        "retrieval": 0.041447,
+        "generation": 0.351428
       }
     },
     {
@@ -9507,8 +9507,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.032107,
-        "generation": 0.337853
+        "retrieval": 0.033842,
+        "generation": 0.374709
       }
     },
     {
@@ -9708,8 +9708,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.040726,
-        "generation": 0.248906
+        "retrieval": 0.046987,
+        "generation": 0.260891
       }
     },
     {
@@ -9873,8 +9873,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.034149,
-        "generation": 0.320351
+        "retrieval": 0.036369,
+        "generation": 0.360921
       }
     },
     {
@@ -10071,8 +10071,8 @@
       "error": null,
       "error_stage": null,
       "latency_ms": {
-        "retrieval": 0.074923,
-        "generation": 0.329571
+        "retrieval": 0.055604,
+        "generation": 0.36846
       }
     }
   ],
@@ -10080,21 +10080,21 @@
     "python": "3.11.17",
     "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
     "pypdf": "6.20.0",
-    "git_commit": "d314bf5+dirty",
+    "git_commit": "c00326a",
     "config_file": "configs/baseline-offline.toml",
-    "started_at": "2026-10-11T18:21:42+00:00",
-    "duration_s": 0.098014,
-    "index_ms": 2.404224,
+    "started_at": "2026-10-11T18:21:52+00:00",
+    "duration_s": 0.091646,
+    "index_ms": 2.443626,
     "latency_ms": {
       "retrieval": {
-        "p50": 0.041058,
-        "p95": 0.080087,
-        "max": 0.102867
+        "p50": 0.0366,
+        "p95": 0.057981,
+        "max": 0.19112
       },
       "generation": {
-        "p50": 0.393886,
-        "p95": 0.653791,
-        "max": 0.876853
+        "p50": 0.354839,
+        "p95": 0.483489,
+        "max": 1.397628
       }
     }
   }

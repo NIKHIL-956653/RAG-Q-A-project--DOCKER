@@ -526,7 +526,7 @@ _missing facts: model; abstention: refusal_text_
 
 ## Latency and environment (not deterministic)
 
-Retrieval p50 0.04 ms, p95 0.08 ms · Generation p50 0.39 ms, p95 0.65 ms · index build 2.4 ms · total 0.10 s · Python 3.11.17 on Linux-6.18.44-fc-v114-x86_64-with-glibc2.39 · pypdf 6.20.0 · git `d314bf5+dirty`
+Retrieval p50 0.04 ms, p95 0.06 ms · Generation p50 0.35 ms, p95 0.48 ms · index build 2.4 ms · total 0.09 s · Python 3.11.17 on Linux-6.18.44-fc-v114-x86_64-with-glibc2.39 · pypdf 6.20.0 · git `c00326a`
 
 ## Reproduce
 
