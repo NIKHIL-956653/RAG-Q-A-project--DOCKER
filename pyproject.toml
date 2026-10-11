@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-reliability-lab"
+version = "0.1.0"
+description = "Measure, debug and improve RAG quality with reproducible, deterministic evaluations."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Nikhil Chandra" }]
+# Core stays small on purpose: the deterministic evaluation path needs only pypdf.
+dependencies = ["pypdf>=6.0,<7"]
+
+[project.optional-dependencies]
+# Dense retrieval with sentence-transformers (mirrors the legacy all-MiniLM-L6-v2 + FAISS-L2 setup).
+dense = ["sentence-transformers>=3.0,<7", "numpy>=1.26,<3"]
+# Google Gemini generation via the official google-genai SDK.
+gemini = ["google-genai>=2.0,<3"]
+dev = [
+    "pytest>=9.0,<10",
+    "ruff>=0.17,<0.18",
+    "mypy>=2.4,<3",
+    # Reference implementation for the chunker parity tests only.
+    "langchain-text-splitters>=1.1,<2",
+    "numpy>=1.26,<3",
+]
+
+[project.scripts]
+rag-lab = "rag_reliability_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = ["parity: compares against a reference implementation that must be installed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "BLE"]
+
+[tool.ruff.lint.per-file-ignores]
+# The LLM prompt template is prose; reflowing it would change the prompt.
+"src/rag_reliability_lab/generation/__init__.py" = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src"]
+
+[[tool.mypy.overrides]]
+module = ["sentence_transformers", "sentence_transformers.*"]
+ignore_missing_imports = true

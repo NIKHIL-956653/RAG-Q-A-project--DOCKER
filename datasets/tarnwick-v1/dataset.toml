@@ -1,0 +1,5 @@
+name = "tarnwick-v1"
+version = "1.0.0"
+description = "Fictional company knowledge base (16 documents, 4 of them topical noise) with 56 questions covering factual, multi-passage, unanswerable, distractor, conflicting, poorly phrased and attribution cases."
+corpus = "corpus"
+questions = "questions.jsonl"
