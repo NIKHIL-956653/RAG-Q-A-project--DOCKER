@@ -7,3 +7,12 @@ __pycache__/
 vector_db/
 *.faiss
 *.pkl
+# Python tooling and lab outputs
+.venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+reports/

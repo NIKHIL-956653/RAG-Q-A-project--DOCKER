@@ -1,0 +1,29 @@
+# The legacy app's RETRIEVAL stack, reproduced exactly:
+#   sentence-transformers/all-MiniLM-L6-v2, newlines replaced by spaces, no normalisation,
+#   exact squared-L2 search (equivalent to FAISS IndexFlatL2), chunks 1000/200, k=3.
+#
+# Retrieval-only (no LLM, no API key). Needs: pip install -e ".[dense]" and network access to
+# Hugging Face for the first model download. NOT executed in the environment that produced
+# this repository's committed benchmarks (Hugging Face was blocked there).
+
+name = "baseline-legacy-dense"
+description = "Legacy retrieval stack (MiniLM + exact L2, 1000/200, k=3); retrieval-only."
+dataset = "../datasets/tarnwick-v1"
+
+[chunking]
+chunk_size = 1000
+chunk_overlap = 200
+
+[retrieval]
+method = "dense"
+top_k = 3
+
+[retrieval.dense]
+model = "sentence-transformers/all-MiniLM-L6-v2"
+metric = "l2"
+normalize_embeddings = false
+replace_newlines = true
+device = "cpu"
+
+[generation]
+provider = "none"

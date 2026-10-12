@@ -1,0 +1,30 @@
+# Full legacy pipeline: MiniLM retrieval + Gemini generation with the grounded, citation-
+# requesting prompt (prompt version grounded-qa-v1).
+#
+# The legacy model "gemini-2.0-flash" was shut down by Google on 2026-06-01. The model below
+# is the replacement Google's deprecations page listed on 2026-10-11; check it is still
+# available before running. Needs: pip install -e ".[dense,gemini]" and GOOGLE_API_KEY.
+# This makes paid API calls (one per question). Try --limit 5 first.
+# NOT executed in the environment that produced this repository's committed benchmarks.
+
+name = "legacy-dense-gemini"
+description = "Legacy retrieval (MiniLM, k=3) + Gemini with grounded citation prompt."
+dataset = "../datasets/tarnwick-v1"
+
+[chunking]
+chunk_size = 1000
+chunk_overlap = 200
+
+[retrieval]
+method = "dense"
+top_k = 3
+
+[generation]
+provider = "gemini"
+
+[generation.gemini]
+model = "gemini-3.6-flash"
+temperature = 0.0
+max_output_tokens = 512
+timeout_s = 60
+max_retries = 3
