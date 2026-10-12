@@ -26,7 +26,7 @@ pip install --no-deps -e .
 rag-lab validate-dataset datasets/tarnwick-v1
 rag-lab eval --config configs/baseline-offline.toml        # writes reports/baseline-offline/
 rag-lab show reports/baseline-offline/report.json c01      # inspect one question
-pytest -q                                                  # 134 tests (+1 with the dense extra)
+pytest -q                                                  # 135 tests (+1 with the dense extra)
 ```
 
 The `eval` exit code is 0 on success, 1 for invalid input (config, dataset or arguments), and 2 if any question raised an error. The report is written in every case.

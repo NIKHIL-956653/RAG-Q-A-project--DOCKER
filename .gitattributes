@@ -1,0 +1,3 @@
+# Keep LF line endings on every platform so hashes and character offsets match.
+* text=auto eol=lf
+*.pdf binary

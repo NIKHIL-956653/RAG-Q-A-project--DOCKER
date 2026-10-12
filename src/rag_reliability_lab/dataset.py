@@ -38,7 +38,7 @@ from pathlib import Path
 from typing import Any
 
 from .errors import DatasetError
-from .ingest import Corpus, load_corpus
+from .ingest import Corpus, load_corpus, normalize_newlines
 from .text import contains_phrase
 
 CATEGORIES: tuple[str, ...] = (
@@ -291,11 +291,13 @@ def load_dataset(path: Path, *, min_chars: int = 1) -> Dataset:
     questions_path = root / str(manifest.get("questions", "questions.jsonl"))
     if not questions_path.is_file():
         raise DatasetError(f"missing questions file {questions_path}")
-    raw_bytes = questions_path.read_bytes()
+    # Hash newline-normalised text so a CRLF checkout (Git for Windows' default) yields the
+    # same questions_sha256 as an LF checkout.
+    questions_text = normalize_newlines(questions_path.read_bytes().decode("utf-8-sig"))
     docs = {d.doc_id: d.text for d in corpus.documents}
     questions: list[Question] = []
     seen_ids: set[str] = set()
-    for line_no, line in enumerate(raw_bytes.decode("utf-8").splitlines(), start=1):
+    for line_no, line in enumerate(questions_text.split("\n"), start=1):
         if not line.strip():
             continue
         try:
@@ -325,5 +327,5 @@ def load_dataset(path: Path, *, min_chars: int = 1) -> Dataset:
         root=str(root),
         corpus=corpus,
         questions=tuple(questions),
-        questions_sha256=hashlib.sha256(raw_bytes).hexdigest(),
+        questions_sha256=hashlib.sha256(questions_text.encode("utf-8")).hexdigest(),
     )

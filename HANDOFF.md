@@ -21,7 +21,7 @@ _Last updated 2026-10-11. Work is on the local branch `rag-reliability-lab`, bas
 | `datasets/tarnwick-v1/` | Original fictional corpus (16 docs) + 56 questions across 7 categories + dataset card |
 | `configs/` | `baseline-offline` (executed), `baseline-legacy-dense` and `legacy-dense-gemini` (provided, not executed) |
 | `benchmarks/baseline-offline/` | Committed reference report, checked for reproducibility by the test suite |
-| `tests/` | 135 tests: 134 run everywhere, 1 dense-integration test needs the `dense` extra |
+| `tests/` | 136 tests: 135 run everywhere, 1 dense-integration test needs the `dense` extra |
 | `docs/SCORING.md`, `docs/ARCHITECTURE.md` | Scoring definitions; architecture diagrams, including a future hosted-service sketch |
 | `pyproject.toml`, `requirements/dev.lock` | Packaging; core dependency `pypdf` only; extras `dense`, `gemini`, `dev`; universal exact pins |
 | `.github/workflows/ci.yml` | Lint, format, `mypy --strict`, dataset validation, tests, benchmark run + artifact, on PRs and pushes to `main` |
@@ -31,7 +31,8 @@ _Last updated 2026-10-11. Work is on the local branch `rag-reliability-lab`, bas
 ## Verification evidence (all executed 2026-10-11)
 
 - `ruff check` / `ruff format --check`: clean. `mypy --strict`: no issues in 23 source files.
-- `pytest -q`: **134 passed, 1 skipped** (Python 3.11.17). The skipped one is the dense integration test, which **passed** separately in a venv with sentence-transformers 6.1.0.
+- `pytest -q`: **135 passed, 1 skipped** (Python 3.11.17). The skipped one is the dense integration test, which **passed** separately in a venv with sentence-transformers 6.1.0.
+- **Windows line endings:** a copy with every dataset, config, benchmark and test file converted to CRLF (what Git for Windows checks out by default) passes all 135 tests. The `questions_sha256` hash is computed on newline-normalised text, and `.gitattributes` keeps LF everywhere.
 - **The CI workflow was replayed step by step** in fresh venvs built only from `requirements/dev.lock`: it passes on Python **3.11.17 and 3.13.16**. `actionlint 1.7.12` reports no issues. Action majors (`@v7`) were checked against the actions' git tags.
 - **Chunker parity** with LangChain `RecursiveCharacterTextSplitter` 1.1.3: **4,984 / 4,984** identical chunk texts (412 real PDF pages + 300 seeded random texts, 7 configurations). Offsets are identical to LangChain's `start_index` on real text (641 chunks). LangChain's search-based offsets ran backwards 21 times on random text; ours are exact by construction.
 - **Reproducibility:** the baseline report is identical across repeated runs and across Python 3.11 and 3.13, excluding timing and environment fields.

@@ -88,3 +88,12 @@ def test_corpus_issues_fail_validation(write_dataset: Callable[..., Path]) -> No
 def test_missing_manifest(tmp_path: Path) -> None:
     with pytest.raises(DatasetError, match=r"dataset\.toml"):
         load_dataset(tmp_path)
+
+
+def test_questions_hash_ignores_line_endings(write_dataset: Callable[..., Path]) -> None:
+    """Git for Windows checks files out with CRLF by default; hashes must not change."""
+    root = write_dataset(TINY_DOCS, TINY_QUESTIONS)
+    lf_hash = load_dataset(root).questions_sha256
+    path = root / "questions.jsonl"
+    path.write_bytes(path.read_bytes().replace(b"\n", b"\r\n"))
+    assert load_dataset(root).questions_sha256 == lf_hash
